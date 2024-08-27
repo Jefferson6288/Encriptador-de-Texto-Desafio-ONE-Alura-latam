@@ -32,8 +32,6 @@ main{
 
 .mensajeProcesado{
     background: #ffffff;
-    background-image: url("/Archivos/Muñeco.png");
-    background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
     color: #0a3871;
@@ -68,14 +66,30 @@ main{
     margin-left: 30px;
     width: 328px;
 }
+.contenedor-parrafo h3{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    color: #343A40;
+}
+
+.contenedor-parrafo p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+    padding-top: 20px;
+}
 .copiar{
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    margin-left: 50px;
+    margin-top: 108px;
     position: absolute;
     width: 336px;
 }
