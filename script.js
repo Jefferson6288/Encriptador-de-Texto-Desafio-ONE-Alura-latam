@@ -1,0 +1,1 @@
+Const: TextArea = Document.querySelector(".text-area")
