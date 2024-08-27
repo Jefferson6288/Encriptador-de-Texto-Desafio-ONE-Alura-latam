@@ -2,43 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
     <title>Encriptador de Jefferson</title>
 </head>
 <body>
-    <Header>
-        <img src="/Archivos/Logo.png" alt="Logo de alura" class="logo">
-    </Header>
+    <header>
+        <img class="logo" src="/Archivos/Logo.png" alt="logotipo de alura">
+    </header>
     <main>
-        <section>
-            <textarea class="text-area" cols="30" rows="10" placeholder="ingrese el texto a encriptar"></textarea>
-            <div>
-                <h3 class="info">Solo letras minúsculas y sin acentos </h3>
+        <section class="seccion1">
+            <div class="contenedorcajatexto">
+                <textarea placeholder="Ingrese el texto aqui" class="cajatexto"></textarea>
             </div>
-            <div class="botones">
-                <button class="bt-encript" onclick="BtnEncriptar">Encriptar</button>
-                <button class="bt-decript">Desencriptar</button>
+            <div class="alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedor-botones">
+                <input type="button" class="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn-desencriptar" value="Desencriptar">
             </div>
         </section>
-        <section>
-                <div class="contenedormunieco">
-                    <img src="Archivos/Muñeco.png" alt="muneco con lupa">
-                </div>
-                <div class="contenedor-parrafo">
-                    <h3>Nigún mensaje fue <br> encontrado</h3>
-                    <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
-                </div>
-                <button class="copiar">copiar</button>
-                </div>
-                <div class="contenedor-resultado">
-                    <p class="textoresultado"></p>
-                </div>
+        <section class="seccion2">
+            <div class="contenedormunieco">
+                <img src="/Archivos/Muñeco.png" alt="perosna con lupa">
+            </div>
+            <div class="contenedor-parrafo">
+                <h3>Nigún mensaje fue <br> encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o <br> desencriptar.</p>
+            </div>
+            <div class="contenedor-copiar">
+                <input type="button" class="btn-copiar" value="Copiar">
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+
         </section>
     </main>
-<script src:"/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
